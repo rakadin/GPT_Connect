@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GPT_Connect</string>
+    <string name="description_image_view">OpenAI Image Description</string>
+</resources>
