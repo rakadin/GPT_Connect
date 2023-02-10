@@ -22,6 +22,8 @@ import com.example.gpt_connect.model.OpenAIOutput;
 import com.example.gpt_connect.model.TypeTalking;
 import com.google.gson.Gson;
 
+import org.json.JSONObject;
+
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -44,7 +46,6 @@ public class LiveChat_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_chat);
-        getSupportActionBar().hide();
         addControls();
         addEvents();
     }
@@ -85,7 +86,7 @@ public class LiveChat_Activity extends AppCompatActivity {
         //ta khởi tạo MessageData
         //và gán TypeTalking.HUMAN
         MessageData userMessage = new MessageData();
-        userMessage.setUserName("Duc hoang");
+        userMessage.setUserName("Rakadin");
         userMessage.setTypeTalking(TypeTalking.HUMAN);
 
         userMessage.setCreated(System.currentTimeMillis());
@@ -110,9 +111,7 @@ public class LiveChat_Activity extends AppCompatActivity {
                     //và coding như bên dưới đây:
                     URL url = new URL(OpenAI.API);
                     HttpURLConnection conn =(HttpURLConnection) url.openConnection();
-
-                    conn.setRequestProperty("Authorization: ","Bearer "+OpenAI.TOKEN);
-                   // conn.setRequestProperty("Authorization","Bearer "+OpenAI.TOKEN);
+                    conn.setRequestProperty("Authorization","spaiBearer "+OpenAI.TOKEN);
                     conn.setRequestProperty("Content-Type",OpenAI.CONTENT_TYPE);
                     conn.setRequestMethod(OpenAI.METHOD);
                     conn.setDoOutput(true);
@@ -163,8 +162,6 @@ public class LiveChat_Activity extends AppCompatActivity {
     }
     private void refreshMessageList() {
         messageDataAdapter.notifyDataSetChanged();
-
         rvMessageData.scrollToPosition(messageList.size() - 1);
     }
-
 }
