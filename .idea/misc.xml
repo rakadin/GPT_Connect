@@ -5,12 +5,20 @@
       <map>
         <entry key="..\:/GPT_Connect/app/src/main/res/drawable/rounded_rectangle.xml" value="0.2375" />
         <entry key="..\:/GPT_Connect/app/src/main/res/drawable/rounded_rectangle_button.xml" value="0.2375" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/drawable/rounded_rectangle_button_fill.xml" value="0.2435" />
         <entry key="..\:/GPT_Connect/app/src/main/res/drawable/rounded_rectangle_fill.xml" value="0.1975" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/drawable/rounded_rectangle_item_add_back_fill.xml" value="0.185" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/drawable/rounded_rectangle_item_back_fill.xml" value="0.157" />
         <entry key="..\:/GPT_Connect/app/src/main/res/drawable/rounded_rectangle_sent_message.xml" value="0.1975" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/layout/activity_folder.xml" value="0.275" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/layout/activity_item.xml" value="0.275" />
         <entry key="..\:/GPT_Connect/app/src/main/res/layout/activity_live_chat.xml" value="0.275" />
         <entry key="..\:/GPT_Connect/app/src/main/res/layout/activity_main.xml" value="0.275" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/layout/add_content_data_dialog.xml" value="0.25" />
         <entry key="..\:/GPT_Connect/app/src/main/res/layout/item_chatbox_message_received.xml" value="0.264" />
-        <entry key="..\:/GPT_Connect/app/src/main/res/layout/item_chatbox_message_sent.xml" value="0.275" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/layout/item_chatbox_message_sent.xml" value="0.4" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/layout/item_name_list.xml" value="0.2558876811594203" />
+        <entry key="..\:/GPT_Connect/app/src/main/res/layout/item_two_column_button.xml" value="0.275" />
       </map>
     </option>
   </component>

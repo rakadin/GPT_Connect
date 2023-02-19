@@ -1,11 +1,15 @@
 package com.example.gpt_connect.adapter;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import androidx.annotation.NonNull;
@@ -22,7 +26,7 @@ import java.util.List;
 
 
 
-public class MessageDataAdapter extends RecyclerView.Adapter {
+public class MessageDataAdapter extends RecyclerView.Adapter  {
 
     private static final int VIEW_TYPE_MESSAGE_SENT = 1;
     private static final int VIEW_TYPE_MESSAGE_RECEIVED = 2;
@@ -66,6 +70,7 @@ public class MessageDataAdapter extends RecyclerView.Adapter {
             case VIEW_TYPE_MESSAGE_RECEIVED:
                 ((ReceivedMessageHolder) holder).bind(message);
         }
+
     }
 
     @Override
@@ -85,6 +90,7 @@ public class MessageDataAdapter extends RecyclerView.Adapter {
             return VIEW_TYPE_MESSAGE_RECEIVED;
         }
     }
+
     //Lớp này dùng để hiển thị giao diện và dữ liệu do người dùng hỏi OpenAI
     class SentMessageHolder extends RecyclerView.ViewHolder {
         private View view;
@@ -99,7 +105,7 @@ public class MessageDataAdapter extends RecyclerView.Adapter {
         }
 
         void bind(MessageData message) {
-            txtPrompt.setText(message.getText());
+            txtPrompt.setText(message.getText().trim());
 
             // Format the stored timestamp into a readable String using method.
             txtSendTime.setText(AppUtil.getTimeFormat(message.getCreated()));
@@ -111,7 +117,7 @@ public class MessageDataAdapter extends RecyclerView.Adapter {
         TextView txtName;
         TextView txtText;
         TextView txtCreated;
-
+        MessageData messageData = new MessageData() ;
         ReceivedMessageHolder(@NonNull View itemView) {
             super(itemView);
             view = itemView;
@@ -120,11 +126,41 @@ public class MessageDataAdapter extends RecyclerView.Adapter {
             txtText=view.findViewById(R.id.txtText);
 
             txtCreated=view.findViewById(R.id.txtCreated);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION) {
+                        String string_mes = txtText.getText().toString().trim();//get clicked text
+                        // Perform the desired action on item click
+                        // su kien alert dialog
+                        AlertDialog.Builder b = new AlertDialog.Builder(context);
+                        b.setTitle("Save data ");
+                        b.setIcon(R.drawable.saved_logo);
+                        b.setMessage("Do you want to save this message?");
+                        b.setPositiveButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel(); // huy dialog
+                            }
+                        });
+                        b.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Intent intent = new Intent(context, LiveChat_Activity.class);
+                                context.startActivity(intent);
+                            }
+                        });
+                        b.create().show();// show dialog
+                       // Toast.makeText(context,""+string_mes,Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
         }
 
         void bind(MessageData message) {
             txtName.setText(message.getUserName());
-            txtText.setText(message.getText());
+            txtText.setText(message.getText().trim());
             txtCreated.setText(AppUtil.getTimeFormat(message.getCreated()));
         }
     }

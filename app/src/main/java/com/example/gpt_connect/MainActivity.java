@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.gpt_connect.activity.Folder_Activity;
 import com.example.gpt_connect.activity.LiveChat_Activity;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
         butsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+                Intent intent = new Intent();
+                intent.setClass(view.getContext(), Folder_Activity.class);
+                startActivity(intent);
             }
         });
     }

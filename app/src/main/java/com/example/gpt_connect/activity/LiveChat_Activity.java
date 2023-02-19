@@ -4,15 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.gpt_connect.MainActivity;
 import com.example.gpt_connect.R;
 import com.example.gpt_connect.adapter.MessageDataAdapter;
 import com.example.gpt_connect.api.OpenAI;
@@ -38,6 +41,7 @@ public class LiveChat_Activity extends AppCompatActivity {
     EditText edtChatBox;
     TextView txtOpenAIStatus;
     ImageView imgChatBoxSend;
+    ImageButton backbut;
 
     private MessageDataAdapter messageDataAdapter;
     private List<MessageData> messageList;
@@ -56,7 +60,7 @@ public class LiveChat_Activity extends AppCompatActivity {
         rvMessageData=findViewById(R.id.rvMessageData);
         txtOpenAIStatus=findViewById(R.id.txtOpenAIStatus);
         imgChatBoxSend=findViewById(R.id.imgChatBoxSend);
-
+        backbut = findViewById(R.id.backbutton);
         messageList = new ArrayList<>();
 
         messageDataAdapter = new MessageDataAdapter(this, messageList);
@@ -65,10 +69,20 @@ public class LiveChat_Activity extends AppCompatActivity {
     }
 
     private void addEvents() {
+        // kich hoat chat box
         imgChatBoxSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 processSendMessage();
+            }
+        });
+        // mở lại trang chu
+        backbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(view.getContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -164,5 +178,9 @@ public class LiveChat_Activity extends AppCompatActivity {
     private void refreshMessageList() {
         messageDataAdapter.notifyDataSetChanged();
         rvMessageData.scrollToPosition(messageList.size() - 1);
+    }
+    private void getItemClick()
+    {
+
     }
 }

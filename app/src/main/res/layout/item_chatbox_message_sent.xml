@@ -10,10 +10,13 @@
         android:id="@+id/imgAvatar"
         android:layout_width="32dp"
         android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
         android:contentDescription="@string/description_image_view"
         android:src="@drawable/ic_idea"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/txtPrompt"
         android:layout_width="wrap_content"
@@ -27,6 +30,19 @@
         android:textColor="#ffffff"
         app:layout_constraintRight_toLeftOf="@id/imgAvatar"
         app:layout_constraintTop_toTopOf="@id/imgAvatar" />
+
+    <TextView
+        android:id="@+id/txtSendname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="You"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/txtPrompt"
+        app:layout_constraintEnd_toStartOf="@+id/imgAvatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtSendTime"
