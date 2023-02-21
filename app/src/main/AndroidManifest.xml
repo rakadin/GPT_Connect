@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.gpt_connect">
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!--permissions for INTERNET-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- permissions for INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,7 +15,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GPT_Connect"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".activity.HowToUse_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Item_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Folder_Activity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,7 +37,7 @@
         </activity>
         <activity
             android:name=".activity.LiveChat_Activity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 
 </manifest>
