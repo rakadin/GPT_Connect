@@ -4,6 +4,7 @@ public class FolderData {
     private int id;
     private String f_name;
     private int id_2;
+    private String f_name_2;
 
     public int getId_2() {
         return id_2;
@@ -21,7 +22,7 @@ public class FolderData {
         this.f_name_2 = f_name_2;
     }
 
-    private String f_name_2;
+
 
     public int getId() {
         return id;

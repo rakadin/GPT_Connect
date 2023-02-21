@@ -24,7 +24,7 @@ public class AppData extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String Foldersql = "CREATE TABLE Folder(Fid INTEGER PRIMARY KEY AUTOINCREMENT not null, Fname text not null);";
-        String Itemsql = "CREATE TABLE Item(IiD INTEGER PRIMARY KEY AUTOINCREMENT not null,Fid INTEGER not null, Iname text not null,FOREIGN KEY(Fid) REFERENCES Folder(Fid))";
+        String Itemsql = "CREATE TABLE Item(IiD INTEGER PRIMARY KEY AUTOINCREMENT not null,Fid INTEGER not null, Iname text not null,Icontent text not null,FOREIGN KEY(Fid) REFERENCES Folder(Fid))";
         sqLiteDatabase.execSQL(Foldersql);
         sqLiteDatabase.execSQL(Itemsql);
     }

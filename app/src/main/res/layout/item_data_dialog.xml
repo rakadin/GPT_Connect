@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="bold"
+    android:layout_width="350dp"
+    android:layout_height="380dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_rectangle_item_add_back_fill">
+
+    <TextView
+        android:id="@+id/ItemTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA SAVER"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <TextView
+        android:id="@+id/icontent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_rectangle_item_content_back_fill"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text=" este las porem pola pota lasu puta oasosd asdsad asd asd assd asd asd asd asd "
+        android:textColor="#673AB7"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ItemTXT"
+        app:layout_constraintVertical_bias="0.274"
+        app:layout_constraintWidth_percent="0.8" />
+    <Button
+        android:id="@+id/xBut"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/remove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <Button
+        android:id="@+id/updateBut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_rectangle"
+        android:text="UPDATE"
+        android:textColor="@color/purple500"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icontent"
+        app:layout_constraintVertical_bias="0.526"
+        app:layout_constraintWidth_percent="0.34" />
+
+    <Button
+        android:id="@+id/deleteBut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_rectangle"
+        android:text="DELETE"
+        android:textColor="@color/purple500"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icontent"
+        app:layout_constraintVertical_bias="0.526"
+        app:layout_constraintWidth_percent="0.35" />
+</androidx.constraintlayout.widget.ConstraintLayout>

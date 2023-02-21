@@ -3,6 +3,7 @@ package com.example.gpt_connect.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,9 +54,10 @@ public class FolderDataAdapter extends ArrayAdapter<FolderData> {
             @Override
             public void onClick(View v) {
                 FolderData clickedFolder = getItem(position);
-                String message = "Clicked folder: " + clickedFolder.getF_name();
-                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
-                openItemActivity(clickedFolder.getId(),v);
+                String message = clickedFolder.getF_name();
+                int Fid = clickedFolder.getId();// get id from column 1
+//                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+                openItemActivity(Fid,v,message);
             }
         });
         //set on click cho cot 2
@@ -63,18 +65,20 @@ public class FolderDataAdapter extends ArrayAdapter<FolderData> {
             @Override
             public void onClick(View v) {
                 FolderData clickedFolder = getItem(position);
-                String message = "Clicked folder: " + clickedFolder.getF_name_2();
-                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
-                openItemActivity(clickedFolder.getId_2(),v);
+                String message = clickedFolder.getF_name_2();
+                int Fid = clickedFolder.getId_2();// get id from column 2
+//                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+                openItemActivity(Fid,v,message);
             }
         });
         return view;
     }
-    void openItemActivity(int id_travel, View view)
+    void openItemActivity(int id_travel, View view, String FolderName)
     {
         Intent intent = new Intent();
         intent.setClass(view.getContext(), Item_Activity.class);
-        intent.putExtra("F_ID",id_travel);
+        intent.putExtra("F_ID",id_travel);// put Foler ID to item_activity
+        intent.putExtra("F_Name",FolderName);// put Folder name to item_activity
         view.getContext().startActivity(intent);
     }
 }

@@ -1,6 +1,6 @@
-package com.example.gpt_connect.sqlite_model;
+package com.example.gpt_connect.model;
 
-public class Folder {
+public class SpinnerFolder {
     private int Fid;
     private String Fname;
 
