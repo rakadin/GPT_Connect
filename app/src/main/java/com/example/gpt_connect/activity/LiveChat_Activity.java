@@ -46,6 +46,7 @@ public class LiveChat_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_chat);
+        getSupportActionBar().hide();
         addControls();
         addEvents();
     }
@@ -111,7 +112,7 @@ public class LiveChat_Activity extends AppCompatActivity {
                     //và coding như bên dưới đây:
                     URL url = new URL(OpenAI.API);
                     HttpURLConnection conn =(HttpURLConnection) url.openConnection();
-                    conn.setRequestProperty("Authorization","spaiBearer "+OpenAI.TOKEN);
+                    conn.setRequestProperty("Authorization","Bearer "+OpenAI.TOKEN);
                     conn.setRequestProperty("Content-Type",OpenAI.CONTENT_TYPE);
                     conn.setRequestMethod(OpenAI.METHOD);
                     conn.setDoOutput(true);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="box_width">90dp</dimen>
+    <dimen name="box_width">40dp</dimen>
     <dimen name="textsize_36">36dp</dimen>
     <dimen name="margin_h0">24dp</dimen>
     <dimen name="margin_h1">20dp</dimen>
