@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="anim_go_up_rightxml" type="AUTO_DETECTED" />
       <mapping pattern="MathDice" type="AUTO_DETECTED" />
+      <mapping pattern="Monager" type="AUTO_DETECTED" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
