@@ -1,0 +1,17 @@
+<application>
+  <component name="deviceManagerPhysicalTab">
+    <physicalDevices>
+      <PhysicalDevice>
+        <key>
+          <Key>
+            <type value="SERIAL_NUMBER" />
+            <value value="2e2debe3" />
+          </Key>
+        </key>
+        <name value="OPPO CPH2159" />
+        <target value="Android API 33" />
+        <api value="33" />
+      </PhysicalDevice>
+    </physicalDevices>
+  </component>
+</application>
