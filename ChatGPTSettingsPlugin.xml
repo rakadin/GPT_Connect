@@ -1,0 +1,30 @@
+<application>
+  <component name="com.obiscr.chatgpt.settings.OpenAISettingsState">
+    <contentStatesAll>
+      <list>
+        <ChatGPTContentState>
+          <enable>true</enable>
+          <content>EasyCode</content>
+        </ChatGPTContentState>
+        <ChatGPTContentState>
+          <order>1</order>
+          <enable>true</enable>
+          <content>ChatGPT</content>
+        </ChatGPTContentState>
+        <ChatGPTContentState>
+          <order>2</order>
+          <enable>true</enable>
+          <content>GPT-3.5-Turbo</content>
+        </ChatGPTContentState>
+        <ChatGPTContentState>
+          <order>3</order>
+          <enable>true</enable>
+          <content>Online ChatGPT</content>
+        </ChatGPTContentState>
+      </list>
+    </contentStatesAll>
+    <option name="easyCodeAccessToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyNjY2NjcxLCJpYXQiOjE2OTI2NjU3NzEsImp0aSI6IjU4ODk0NGFkMjAwMDQ1NWI5MWE5ZjIyOGQxNTkyNGQ5IiwidXNlcl9pZCI6MzIwNDc4fQ.7OIXTu0rQEJFpXl8P7JjmiirOWwCQ8NOZhvyxI49axU" />
+    <option name="easyCodeRefreshToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5Mzg3NTM3MSwiaWF0IjoxNjkyNjY1NzcxLCJqdGkiOiI5OWIzYjA3NzFkMDQ0MDVkYjIxN2FiYWVjMTExY2Q5YiIsInVzZXJfaWQiOjMyMDQ3OH0.b75M15iWpRAy_ljmUNcDADmtIKnyRLY8QP1EFOO5ucE" />
+    <option name="easyCodeUserEmail" value="hoangtranminhduc1005@gmail.com" />
+  </component>
+</application>
