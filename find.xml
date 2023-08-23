@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project 'Advance Counting'" />
-    <option name="defaultScopeName" value="Project 'Advance Counting'" />
-    <option name="SEARCH_SCOPE" value="Project 'Advance Counting'" />
+    <option name="customScope" value="Project 'Contacts Book'" />
+    <option name="defaultScopeName" value="Project 'Contacts Book'" />
+    <option name="SEARCH_SCOPE" value="Project 'Contacts Book'" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.xml</mask>
