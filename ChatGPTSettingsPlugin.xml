@@ -23,8 +23,8 @@
         </ChatGPTContentState>
       </list>
     </contentStatesAll>
-    <option name="easyCodeAccessToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyNjY2NjcxLCJpYXQiOjE2OTI2NjU3NzEsImp0aSI6IjU4ODk0NGFkMjAwMDQ1NWI5MWE5ZjIyOGQxNTkyNGQ5IiwidXNlcl9pZCI6MzIwNDc4fQ.7OIXTu0rQEJFpXl8P7JjmiirOWwCQ8NOZhvyxI49axU" />
-    <option name="easyCodeRefreshToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5Mzg3NTM3MSwiaWF0IjoxNjkyNjY1NzcxLCJqdGkiOiI5OWIzYjA3NzFkMDQ0MDVkYjIxN2FiYWVjMTExY2Q5YiIsInVzZXJfaWQiOjMyMDQ3OH0.b75M15iWpRAy_ljmUNcDADmtIKnyRLY8QP1EFOO5ucE" />
+    <option name="easyCodeAccessToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyOTUxODgwLCJpYXQiOjE2OTI2NjU3NzEsImp0aSI6Ijk2ZDliMzc3NGVkMTQzY2E4ZDlkM2I0MmI3MDJlODVkIiwidXNlcl9pZCI6MzIwNDc4fQ.aJf65MLiavXvaS-DRUVtPsAWhDkfX9YZEUrgZCBYwEg" />
+    <option name="easyCodeRefreshToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5NDE2MDU4MCwiaWF0IjoxNjkyOTUwOTgwLCJqdGkiOiJjNDVjOWQwNDg3MmE0MmFmOGVkMjcyMDE2MmE3ZDNhMiIsInVzZXJfaWQiOjMyMDQ3OH0.2Vm-DJSe1K53tcG6HlMnN3dzV3j7GSaZ5SiGb0A07UA" />
     <option name="easyCodeUserEmail" value="hoangtranminhduc1005@gmail.com" />
   </component>
 </application>
