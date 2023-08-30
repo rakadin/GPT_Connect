@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project 'Contacts Book'" />
-    <option name="defaultScopeName" value="Project 'Contacts Book'" />
-    <option name="SEARCH_SCOPE" value="Project 'Contacts Book'" />
+    <option name="customScope" value="Project 'LearningJetpackCompose'" />
+    <option name="defaultScopeName" value="Project 'LearningJetpackCompose'" />
+    <option name="SEARCH_SCOPE" value="Project 'LearningJetpackCompose'" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.xml</mask>
